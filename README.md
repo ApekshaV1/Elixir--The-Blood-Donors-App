@@ -1,4 +1,4 @@
-# 🩸 Elixir - Blood Donor Management System  
+# 🩸 Elixir - Blood Donor Management System   
 
 ## 🌟 Overview  
 Elixir is an interactive **Blood Donor Management System** designed to help individuals find blood donors efficiently. The platform allows users to **search for donors** based on blood type and location, providing a user-friendly interface with informative sections on blood donation, emergency helpline numbers, and donor registration.
