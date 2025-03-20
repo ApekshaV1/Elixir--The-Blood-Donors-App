@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Add a background image */
+    background-size: cover;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: crimson;
+    color: white;
+  }
+  
+  .home, .find-donors, .blood-info, .helpline {
+    text-align: center;
+    padding: 20px;
+  }
+  
