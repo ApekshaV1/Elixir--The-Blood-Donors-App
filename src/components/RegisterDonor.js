@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles.css";
 
 function RegisterDonor() {
   const [name, setName] = useState("");

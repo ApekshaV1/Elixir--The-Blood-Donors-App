@@ -1,19 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Add a background image */
+    background-color: azure; /* Add a background image */
     background-size: cover;
   }
   
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background: crimson;
-    color: white;
+  /* Navbar container */
+.navbar {
+  display: flex;
+  flex-direction: column; /* Stack title and links vertically */
+  align-items: center; /* Center-align items */
+  background-color: #b71c1c; /* Dark red background */
+  padding: 15px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo / Heading */
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  justify-content: center; /* Center links horizontally */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Styling for links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  background-color: white;
+  color: #b71c1c;
+  transition: 0.3s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    text-align: center;
   }
+}
+
   
   .home, .find-donors, .blood-info, .helpline {
     text-align: center;
     padding: 20px;
   }
   
+ 

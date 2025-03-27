@@ -6,7 +6,8 @@ import FindDonors from "./components/FindDonors";
 import BloodInfo from "./components/BloodInfo";
 import Helpline from "./components/Helpline";
 import RegisterDonor from "./components/RegisterDonor";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"; 
+import "./styles.css";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/blood-info" element={<BloodInfo />} />
         <Route path="/helpline" element={<Helpline />} />
         <Route path="/register" element={<RegisterDonor />} />
+      
       </Routes>
       <Footer />
     </div>
