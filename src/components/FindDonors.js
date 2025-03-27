@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DonorCard from " C:/Vedashat/AV's Docs/Projects/Elixir_The blood donors app/src/components/DonorCard.js ";
+import DonorCard from "./DonorCard";
 
 function FindDonors() {
   const [donors, setDonors] = useState([]);
@@ -17,10 +17,7 @@ function FindDonors() {
           location: user.address.city
         }));
 
-        // ✅ Fetch locally registered donors
         const savedDonors = JSON.parse(localStorage.getItem("donors")) || [];
-
-        // ✅ Combine both API and local data
         const combinedDonors = [...formattedDonors, ...savedDonors];
         setDonors(combinedDonors);
         setFilteredDonors(combinedDonors);
@@ -40,12 +37,7 @@ function FindDonors() {
   return (
     <div className="find-donors">
       <h2>Find a Blood Donor</h2>
-      <input
-        type="text"
-        placeholder="Enter location"
-        value={location}
-        onChange={(e) => setLocation(e.target.value)}
-      />
+      <input type="text" placeholder="Enter location" value={location} onChange={(e) => setLocation(e.target.value)} />
       <select value={bloodType} onChange={(e) => setBloodType(e.target.value)}>
         <option value="">Select Blood Type</option>
         <option value="A+">A+</option>

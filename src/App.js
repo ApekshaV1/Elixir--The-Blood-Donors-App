@@ -1,11 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "C:/Vedashat/AV's Docs/Projects/Elixir_The blood donors app/src/components/Navbar";
-import Home from "C:/Vedashat/AV's Docs/Projects/Elixir_The blood donors app/src/components/Home";
-import FindDonors from "C:/Vedashat/AV's Docs/Projects/Elixir_The blood donors app/src/components/FindDonors.js";
-import BloodInfo from "C:/Vedashat/AV's Docs/Projects/Elixir_The blood donors app/src/components/BloodInfo";
-import Helpline from "C:/Vedashat/AV's Docs/Projects/Elixir_The blood donors app/src/components/Helpline";
-import Footer from "C:/Vedashat/AV's Docs/Projects/Elixir_The blood donors app/src/components/Footer";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import FindDonors from "./components/FindDonors";
+import BloodInfo from "./components/BloodInfo";
+import Helpline from "./components/Helpline";
+import RegisterDonor from "./components/RegisterDonor";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/find-donors" element={<FindDonors />} />
         <Route path="/blood-info" element={<BloodInfo />} />
         <Route path="/helpline" element={<Helpline />} />
+        <Route path="/register" element={<RegisterDonor />} />
       </Routes>
       <Footer />
     </div>
