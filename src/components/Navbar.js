@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-brand">
-        <img src="/logo.png" alt="Blood Donor Management Logo" className="logo" />
+        <img src="/logo.png" alt="Blood Donor Management Logo" className="logo"/>
         <h2>Blood Donors Portal</h2>
       </div>
       <div className="nav-links">
